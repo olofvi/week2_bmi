@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
+
+    <script src="src/bmi_calculator.js"></script>
+    <script src="src/bmi_imperial.js"></script>
+    <script src="src/person.js"></script>
+
+    <script src="src/bmi_ui.js"></script>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="weight" placeholder="Weight">
+      <input type="text" id="height" placeholder="Height">
+      <input type="button" id="calculate" value="Calculate">
+    </form>
+    <div>
+      <span id="display_value"></span>
+      <span id="display_message"></span>
+    </div>
+    <form>
+      <input type="text" id="weight_imperial" placeholder="Weight in pounds">
+      <input type="text" id="height_imperial" placeholder="Height in feets">
+      <input type="button" id="calculate_imperial" value="Calculate imperial">
+    </form>
+    <div>
+      <span id="display_value_imperial"></span>
+      <span id="display_message_imperial"></span>
+    </div>
+  </body>
+</html>
