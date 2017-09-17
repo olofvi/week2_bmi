@@ -5,7 +5,7 @@ BMIImperialCalculator.prototype.imperial_bmi = function(obj) {
   var height_imperial = obj.height_imperial;
   if (weight_imperial > 0 && height_imperial > 0) {
     var finalBMI = weight_imperial * 703 / ((height_imperial * 12) * (height_imperial * 12));
-    obj.bmiValueImperial = parseFloat(finalBMI.toFixed(2));
+    obj.bmiValue = parseFloat(finalBMI.toFixed(2));
     setBMIMessageImperial(obj);
   }
 };

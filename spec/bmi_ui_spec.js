@@ -3,7 +3,7 @@ describe('BMI_UI - index.html', function(){
       jasmine.getFixtures().fixturesPath = '.';
       loadFixtures('index.html');
       $.holdReady(false);
-    })
+    });
     describe('Metric', function(){
       beforeEach(function() {
         $('#weight').val('90');
@@ -19,7 +19,7 @@ describe('BMI_UI - index.html', function(){
         expect($('#display_message').text()).toBe('and you are Overweight');
       });
 
-    })
+    });
 
 
     describe('Imperial', function(){
@@ -37,5 +37,5 @@ describe('BMI_UI - index.html', function(){
         expect($('#display_message_imperial').text()).toBe('and you are Overweight');
       });
 
-    })
+    });
 });
